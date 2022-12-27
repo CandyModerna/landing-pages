@@ -13,6 +13,16 @@ header, .col-1 {
     flex-flow: row wrap;
 }
 
+header, .col-1 {
+    display: flex;
+    width: 100%;
+    background: lightpink;
+    justify-content: space-around;
+    align-items: center;
+    align-self: stretch;
+    flex-flow: row wrap;
+}
+
 .header-links a {
     text-decoration: none;
     color: white;
@@ -31,7 +41,7 @@ header, .col-1 {
 }
 
 .col-1 {
-    height: 50vh;
+    height: 100vh;
     flex: row wrap;
     gap: 32px;
 }
