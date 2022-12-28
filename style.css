@@ -3,7 +3,7 @@ body {
     font-family: Arial, Helvetica, sans-serif ;
 }
 
-header, .col-1 {
+header {
     display: flex;
     width: 100%;
     background: lightpink;
@@ -13,10 +13,10 @@ header, .col-1 {
     flex-flow: row wrap;
 }
 
-header, .col-1 {
+.col-1 {
     display: flex;
     width: 100%;
-    background: lightpink;
+    background: linear-gradient(180deg, lightpink, rgba(173, 270, 255, 0.800));
     justify-content: space-around;
     align-items: center;
     align-self: stretch;
@@ -26,6 +26,16 @@ header, .col-1 {
 .header-links a {
     text-decoration: none;
     color: white;
+}
+
+.header-links a:hover {
+    transform: scale(1.1);
+    color: grey;
+}
+
+.header-links {
+    display: flex;
+    gap: 5%;
 }
 
 .header {
@@ -41,27 +51,26 @@ header, .col-1 {
 }
 
 .col-1 {
-    height: 100vh;
+    height: 80vh;
     flex: row wrap;
     gap: 32px;
 }
 
 .textcol-1 {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     flex: 1;
     margin-left: 15%;
 }
 
-.imgcol-1 {
+.cardcol-1 {
     flex: 1;
     display: flex;
-    align-self: stretch;
     justify-content: center;
     align-items: center;
     color: #1F2937;
-    min-width: 300px;
-    max-height: 100%;
+    background-color: grey;
+    margin-right: 15%;
     overflow: hidden;
 }
 
@@ -90,7 +99,7 @@ button:hover {
 .col-2 {
     display: flex;
     padding: 64px;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
     justify-content: center;
 }
 
@@ -123,3 +132,20 @@ button:hover {
     background-image: linear-gradient(180deg, lightskyblue, rgba(0, 0, 0, 0));
 }
 
+.col-3 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 64px;
+    background: lightskyblue;
+}
+
+.col-3 p {
+    font-size: 32px;
+    font-style: italic;
+}
+
+.author {
+    font-weight: bold;
+    text-align: right;
+}
