@@ -5,7 +5,6 @@ body {
 
 header {
     display: flex;
-    width: 100%;
     background: lightpink;
     justify-content: space-around;
     align-items: center;
@@ -15,7 +14,6 @@ header {
 
 .col-1 {
     display: flex;
-    width: 100%;
     background: linear-gradient(180deg, lightpink, rgba(173, 270, 255, 0.800));
     justify-content: space-around;
     align-items: center;
@@ -38,7 +36,7 @@ header {
     gap: 5%;
 }
 
-.header {
+.header-links, .header-logo {
     padding: 10px;
 }
 
@@ -51,7 +49,7 @@ header {
 }
 
 .col-1 {
-    height: 80vh;
+    min-height: 80vh;
     flex: row wrap;
     gap: 32px;
 }
@@ -75,7 +73,7 @@ header {
 }
 
 .signup {
-    background-color: white;
+    background-color: rgb(240, 240, 240);
     flex: 0 1 auto;
     width: 100px;
     height: 30px;
@@ -134,9 +132,10 @@ button:hover {
 
 .col-3 {
     display: flex;
-    width: 100%;
     justify-content: center;
-    padding: 64px;
+    align-items: center;
+    align-self: stretch;
+    padding: px;
     background: lightskyblue;
 }
 
@@ -148,4 +147,44 @@ button:hover {
 .author {
     font-weight: bold;
     text-align: right;
+}
+
+.col-4 {
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+.cardcol-4 {
+    display: flex;
+    background-color: lightpink;
+    border-radius: 10px;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 48px;
+}
+
+.textcol-4 {
+    margin-left: 15px;
+    flex: 2;
+}
+
+.cardcol-4 button {
+    margin-right: 28px;
+    flex: -1;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(127, 163, 180);
+}
+
+.col-4 h3 {
+    margin-bottom: -15px;
 }
