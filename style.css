@@ -3,37 +3,42 @@ body {
     font-family: Arial, Helvetica, sans-serif ;
 }
 
-header {
+header, .col-1 {
     display: flex;
-    background: lightpink;
     justify-content: space-around;
     align-items: center;
     align-self: stretch;
     flex-flow: row wrap;
+}
+
+header {
+    background: lightpink; 
+    border-bottom-style: solid;
+    border-bottom-color: rgba(255, 255, 255, 0.205);
+    border-bottom-width: 2px;
 }
 
 .col-1 {
-    display: flex;
-    background: linear-gradient(180deg, lightpink, rgba(173, 270, 255, 0.800));
-    justify-content: space-around;
-    align-items: center;
-    align-self: stretch;
-    flex-flow: row wrap;
+    background: linear-gradient(180deg, lightpink, rgba(135,206,250,1));
 }
 
 .header-links a {
+    font-size: 1em;
     text-decoration: none;
     color: white;
 }
 
 .header-links a:hover {
     transform: scale(1.1);
-    color: grey;
+    transition: all 0.5s;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.300);
+    color: lightgoldenrodyellow;
 }
 
 .header-links {
     display: flex;
-    gap: 5%;
+    flex: 0;
+    gap: 32px;
 }
 
 .header-links, .header-logo {
@@ -50,14 +55,13 @@ header {
 
 .col-1 {
     min-height: 80vh;
-    flex: row wrap;
     gap: 32px;
 }
 
 .textcol-1 {
     display: flex;
     flex-flow: row wrap;
-    flex: 1;
+    flex: 2;
     margin-left: 15%;
 }
 
@@ -66,9 +70,11 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 5em 5em 5em 0em;
     color: #1F2937;
     background-color: grey;
     margin-right: 15%;
+    padding: 100px 0px;
     overflow: hidden;
 }
 
@@ -82,11 +88,21 @@ header {
     color: black;
     font-weight: bold;
     padding-bottom: 2px;
+    transition: all 0.4s;
 }
 
-button:hover {
+.signup:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.300);
+    transition: all 0.5s;
     background-color: lightskyblue;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.300);
     color: white;
+}
+
+.signup a {
+    text-decoration: none;
+    color: black;
 }
 
 .col-1 h1 {
@@ -103,6 +119,7 @@ button:hover {
 
 .col-2 h2 {
     font-size: 48px;
+    margin-top: -32px;
     text-align: center;
 }
 
@@ -115,23 +132,29 @@ button:hover {
 
 .cardcol-2 {
     max-width: 150px;
-    transition: ease-in .7s;
 }
 
 .imgcol-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 144px;
     height: 144px;
     background-image: linear-gradient(180deg, lightpink, rgba(0, 0, 0, 0));
     border-radius: 10px;    
+    transition: all 0.4s;
 }
 
 .imgcol-2:hover {
-    transform:scale(1.05);
+    transform:scale(1.1);
+    transition: all 0.5s;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.300);
     background-image: linear-gradient(180deg, lightskyblue, rgba(0, 0, 0, 0));
 }
 
 .col-3 {
     display: flex;
+    min-height: 50vh;
     justify-content: center;
     align-items: center;
     align-self: stretch;
@@ -139,7 +162,7 @@ button:hover {
 }
 
 .col-3 p {
-    font-size: 32px;
+    font-size: 1.5em;
     font-style: italic;
 }
 
@@ -149,23 +172,29 @@ button:hover {
 }
 
 .quote {
-    padding: 32px;
+    background-color: rgba(0, 0, 0, 0.171);
+    border-radius: 15px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.300);
+    margin: 32px;
+    padding: 0px 50px;
 }
 .col-4 {
     display: flex;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    background: rgb(231, 231, 231);
     justify-content: center;
     align-items: center;
+    align-self: stretch;
     flex-flow: column wrap;
 }
 
 .cardcol-4 {
     display: flex;
     background-color: lightpink;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.300);
+    margin: 32px 48px;
     border-radius: 10px;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     gap: 48px;
 }
@@ -190,3 +219,4 @@ footer {
 .col-4 h3 {
     margin-bottom: -15px;
 }
+
