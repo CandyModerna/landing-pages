@@ -135,7 +135,6 @@ button:hover {
     justify-content: center;
     align-items: center;
     align-self: stretch;
-    padding: px;
     background: lightskyblue;
 }
 
@@ -149,6 +148,9 @@ button:hover {
     text-align: right;
 }
 
+.quote {
+    padding: 32px;
+}
 .col-4 {
     display: flex;
     margin-top: 15px;
